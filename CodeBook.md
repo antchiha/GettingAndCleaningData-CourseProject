@@ -34,11 +34,8 @@ After setting the source directory for the files, read into tables the data loca
 
 Assign column names and merge to create one data set.
 
-#### Extract only the measurements on the mean and standard deviation for each measurement. 
-Create a logcal vector that contains TRUE values for the ID, mean and stdev columns. Subset this data to keep only the necessary columns.
+#### Extract only the measurements on the mean and standard deviation for each measurement and rename variables. 
+Create a logcal vector that contains TRUE values for the ID, mean and stdev columns. Subset this data to keep only the necessary columns. Merge data subset with the activityType table to cinlude the descriptive activity names. Use gsub function for pattern replacement to clean up the data labels.
 
-#### Use descriptive activity names to name the activities in the data set and descriptive activity names
-Merge data subset with the activityType table to cinlude the descriptive activity names. Use gsub function for pattern replacement to clean up the data labels.
-
-### Create a second, independent tidy data set with the average of each variable for each activity and each subject. 
+#### Create a second, independent tidy data set with the average of each variable for each activity and each subject. 
 Per the project instructions, we need to produce only a data set with the average of each veriable for each activity and subject. it can be found in the repository under **_tidyData.txt_**
