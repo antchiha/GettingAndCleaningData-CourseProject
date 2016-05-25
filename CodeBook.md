@@ -23,14 +23,14 @@ For each record in the dataset it is provided:
 
 #### Merge the training and the test sets to create one data set.
 After setting the source directory for the files, read into tables the data located in
-- features.txt
-- activity_labels.txt
-- subject_train.txt
-- x_train.txt
-- y_train.txt
-- subject_test.txt
-- x_test.txt
-- y_test.txt
+- **_features.txt_**
+- **_activity_labels.txt_**
+- **_subject_train.txt_**
+- **_x_train.txt_**
+- **_y_train.txt_**
+- **_subject_test.txt_**
+- **_x_test.txt_**
+- **_y_test.txt_**
 
 Assign column names and merge to create one data set.
 
@@ -41,4 +41,4 @@ Create a logcal vector that contains TRUE values for the ID, mean and stdev colu
 Merge data subset with the activityType table to cinlude the descriptive activity names. Use gsub function for pattern replacement to clean up the data labels.
 
 ### Create a second, independent tidy data set with the average of each variable for each activity and each subject. 
-Per the project instructions, we need to produce only a data set with the average of each veriable for each activity and subject. it can be found in the repository under '''tidyData.txt'''
+Per the project instructions, we need to produce only a data set with the average of each veriable for each activity and subject. it can be found in the repository under **_tidyData.txt_**
